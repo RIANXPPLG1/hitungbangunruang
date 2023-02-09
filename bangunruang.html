@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // bangun ruang 
+        // volume
+        // * balok p * l * t extends bangun ruang
+        // volume
+        // kubus  s*s*s
+        // volume
+        // limas_segi_empat volume
+        // volume
+        // tabung
+        // volume
+
+        class bangun_ruang{
+
+            volume(){
+
+            }
+        }
+        class balok extends bangun_ruang{
+            panjang
+            lebar
+            tinggi
+            volume(){
+            return this.panjang*this.lebar*this.tinggi
+            }
+        }
+        class kubus extends bangun_ruang{
+            sisi
+           
+            volume(){
+               return this.sisi*this.sisi*this.sisi
+            }
+        }
+        class limas_segi_empat extends bangun_ruang{
+            volume
+           luas_alas
+           tinggi_alas
+           
+            volume(){
+                return this.volume*this.luas_alas*this.tinggi_alas
+            }
+        }
+        class tabung extends bangun_ruang{
+
+            volume(){
+
+            }
+        }
+        var balok1 = new balok();
+        balok1.panjang=2
+        balok1.lebar=3
+        balok1.tinggi=2
+        document.write(balok1.volume()+"<br/>");
+
+        var kubus1 = new kubus();
+        kubus1.sisi=2
+        kubus1.sisi=2
+        kubus1.sisi=2
+        document.write(kubus1.volume()+"<br/>");
+
+        var limas_segi_empat1 = new limas_segi_empat();
+        limas_segi_empat1.volume=3.2
+        limas_segi_empat1.luas_alas=2
+        limas_segi_empat1.tinggi_alas=3
+        document.write(limas_segi_empat1.volume());
+    </script>
+</body>
+</html>
