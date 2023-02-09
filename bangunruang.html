@@ -19,59 +19,50 @@
         // tabung
         // volume
 
-        class bangun_ruang{
+  
+        class bangun_ruang {
+            p = 30;
+            l = 24;
+            t = 13;
+            
 
-            volume(){
-
-            }
+            
         }
-        class balok extends bangun_ruang{
-            panjang
-            lebar
-            tinggi
+        class balok extends bangun_ruang {
             volume(){
-            return this.panjang*this.lebar*this.tinggi
+                return this.p * this.l * this.t 
             }
-        }
-        class kubus extends bangun_ruang{
-            sisi
-           
-            volume(){
-               return this.sisi*this.sisi*this.sisi
+        
+            s = 10
+            kubus(){
+                return this.s * this.s * this.s
             }
-        }
-        class limas_segi_empat extends bangun_ruang{
-            volume
-           luas_alas
-           tinggi_alas
-           
-            volume(){
-                return this.volume*this.luas_alas*this.tinggi_alas
+        
+            V = 3;
+            L = (10 * 10);
+            T = 8
+            limas_segi_empat(){
+                return this.V * this.L * this.T
             }
-        }
-        class tabung extends bangun_ruang{
-
-            volume(){
-
+        
+            N = 8;
+            R = 11;
+            TI = 31;
+            tabung(){
+                return this.N * this.R * this.TI
             }
-        }
-        var balok1 = new balok();
-        balok1.panjang=2
-        balok1.lebar=3
-        balok1.tinggi=2
-        document.write(balok1.volume()+"<br/>");
+        
+    }
 
-        var kubus1 = new kubus();
-        kubus1.sisi=2
-        kubus1.sisi=2
-        kubus1.sisi=2
-        document.write(kubus1.volume()+"<br/>");
+         var balok1 = new balok();
+        document.write(balok1.volume()+'<br />')
+        document.write(balok1.kubus()+'<br />')
+        document.write(balok1.limas_segi_empat()+'<br />')
+        document.write(balok1.tabung()+'<br />')
 
-        var limas_segi_empat1 = new limas_segi_empat();
-        limas_segi_empat1.volume=3.2
-        limas_segi_empat1.luas_alas=2
-        limas_segi_empat1.tinggi_alas=3
-        document.write(limas_segi_empat1.volume());
+    </script>
+</body>
+</html>
     </script>
 </body>
 </html>
